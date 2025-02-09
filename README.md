@@ -1,3 +1,4 @@
+[![Ruby RSpec Tests](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/ruby.yml/badge.svg)](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/ruby.yml)
 [![Dependabot Updates](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/dependabot/dependabot-updates)
 
 # The Goal
