@@ -15,7 +15,7 @@ Whether you integrate with a rock-solid API or deal with unpredictable services,
 It depends only on a few standard Ruby libraries like: 
 
 * JSON
-* Net
+* Net::HTTP
 
 # Installation
 
@@ -38,6 +38,17 @@ Or install it yourself as:
 ```ruby
 provider = BulletProofJson::Provider.new
 json = provider.get("https://api.restful-api.dev/objects")
+json[0]["name"]
+# "Google Pixel 6 Pro"
+```
+
+By default, it fetches the JSON response with maximum 3 attempts and 1 second of sleep time between each attempt.
+
+You can change it in options hash per each request. Here is an example for 10 attempts, and 60 seconds of sleep time between attempts:
+
+```ruby
+provider = BulletProofJson::Provider.new
+json = provider.get("https://api.restful-api.dev/objects", {max_attempts: 10, sleep_time: 60})
 json[0]["name"]
 # "Google Pixel 6 Pro"
 ```
