@@ -1,6 +1,6 @@
 [![Dependabot Updates](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/dependabot/dependabot-updates)
 
-# Goal
+# The Goal
 
 Tired of dealing with unreliable REST APIs with JSON responses, endless timeouts, and complex error handling just to fetch some JSON data?
 
