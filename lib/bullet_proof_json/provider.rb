@@ -29,7 +29,7 @@ module BulletProofJson
 
       rescue ::Net::ReadTimeout => e
         @logger.error(self.class.name, " #{page.nil? ? "" : (page.to_s + ":")} #{e}\n#{uri_string}")
-        if (attempts += 1) < max_attempts
+        if (attempts += 1) <= max_attempts
           @logger.debug(self.class.name, "\tAttempt no. #{attempts} ...")
           sleep sleep_time
           retry
@@ -40,7 +40,7 @@ module BulletProofJson
 
       rescue ::Net::OpenTimeout => e
         @logger.error(self.class.name, " #{page.nil? ? "" : (page.to_s + ":")} #{e}\n#{uri_string}")
-        if (attempts += 1) < max_attempts
+        if (attempts += 1) <= max_attempts
           @logger.debug(self.class.name, "\tAttempt no. #{attempts} ...")
           sleep sleep_time
           retry
@@ -52,7 +52,7 @@ module BulletProofJson
       rescue ::JSON::ParserError => e
         @logger.error(self.class.name, " #{page.nil? ? "" : (page.to_s + ":")} #{e}\n#{uri_string}")
 
-        if (attempts += 1) < max_attempts
+        if (attempts += 1) <= max_attempts
           @logger.debug(self.class.name,  "\tAttempt no. #{attempts} ...")
           sleep sleep_time
           retry
