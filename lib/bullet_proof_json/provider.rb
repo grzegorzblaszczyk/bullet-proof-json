@@ -23,6 +23,7 @@ module BulletProofJson
         uri = URI(uri_string)
         http_headers = {}
         http_headers["Authorization"] = "Bearer #{@api_key}" unless @api_key.nil?
+        http_headers["User-Agent"] = user_agent
         response = ::Net::HTTP.get(uri, http_headers)
         json = JSON(response)
 
@@ -62,6 +63,11 @@ module BulletProofJson
       end
       json
     end
+
+    private
+      def user_agent(version = BulletProofJson::VERSION)
+        "bullet-proof-json #{version} - https://github.com/grzegorzblaszczyk/bullet-proof-json"
+      end
 
   end
 
