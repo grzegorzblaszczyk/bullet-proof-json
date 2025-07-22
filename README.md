@@ -78,3 +78,16 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 Everyone interacting in the BulletProofJSON project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/grzegorzblaszczyk/bullet-proof-json-provider//blob/master/CODE_OF_CONDUCT.md).
 
+## How to release a new version to RubyGems.org
+
+```bash
+rspec spec
+mdv CHANGELOG.md
+git ci -m "UPGRADE: version x.y.z" .
+git push origin main
+gem build bullet_proof_json.gemspec
+gem push bullet_proof_json-x.y.z.gem
+git tag vx.y.z
+git push origin main --tags
+```
+
