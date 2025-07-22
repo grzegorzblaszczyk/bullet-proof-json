@@ -1,5 +1,6 @@
 [![Ruby RSpec Tests](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/ruby.yml/badge.svg)](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/ruby.yml)
 [![Dependabot Updates](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/dependabot/dependabot-updates)
+[![Gem Version](https://badge.fury.io/rb/bullet-proof-json.svg)](https://badge.fury.io/rb/bullet-proof-json)
 
 # The Goal
 
@@ -19,6 +20,8 @@ It depends only on a few standard Ruby libraries like:
 
 * JSON
 * Net::HTTP
+
+🪶 No dependencies except standard Ruby classes.
 
 # Installation
 

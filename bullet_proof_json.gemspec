@@ -9,6 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Grzegorz Błaszczyk"]
   spec.email         = ["grzegorz.blaszczyk@gmail.com"]
 
+  spec.metadata["source_code_uri"]  = "https://github.com/grzegorzblaszczyk/bullet-proof-json"
+  spec.metadata["changelog_uri"]    = "https://github.com/grzegorzblaszczyk/bullet-proof-json/blob/main/CHANGELOG.md"
+
   spec.summary       = "Bullet Proof JSON for Ruby with seamless request handling, smart throttling and robust retry mchanism"
   spec.description   = "Bullet Proof JSON for Ruby takes the hassle out of API response handling by offering: Seamless Request Handling - automatically manage timeouts and errors so your app stays resilient, Smart Throttling - respect API rate limits without overcomplicating your code, Robust Retry Mechanism - never miss a response due to transient errors."
   spec.homepage      = "https://github.com/grzegorzblaszczyk/bullet-proof-json"
