@@ -1,4 +1,4 @@
-require "bullet_proof_json"
+require "spec_helper"
 require "pry"
 
 RSpec.describe BulletProofJson::Provider do

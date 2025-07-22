@@ -3,8 +3,12 @@ require "simplecov"
 
 SimpleCov.start do
   enable_coverage :branch
-  add_filter "/spec/"
+  add_filter "/spec/**/*_spec.rb"
+  track_files "lib/*.rb"
+  track_files "lib/**/*.rb"
 end
+
+require_relative '../lib/bullet_proof_json'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

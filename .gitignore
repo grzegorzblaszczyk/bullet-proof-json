@@ -57,3 +57,6 @@ build-iPhoneSimulator/
 
 # .DS_Store
 .DS_Store
+
+# rspec status
+.rspec_status
