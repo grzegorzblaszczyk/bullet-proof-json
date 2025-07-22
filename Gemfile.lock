@@ -80,5 +80,3 @@ DEPENDENCIES
   rspec (~> 3.0)
   simplecov (~> 0.22.0)
 
-BUNDLED WITH
-   2.6.3
