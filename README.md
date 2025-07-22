@@ -1,6 +1,6 @@
 [![Ruby RSpec Tests](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/ruby.yml/badge.svg)](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/ruby.yml)
 [![Dependabot Updates](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/grzegorzblaszczyk/bullet-proof-json/actions/workflows/dependabot/dependabot-updates)
-[![Gem Version](https://badge.fury.io/rb/bullet-proof-json.svg)](https://badge.fury.io/rb/bullet-proof-json)
+[![Gem Version](https://badge.fury.io/rb/bullet_proof_json.svg)](https://badge.fury.io/rb/bullet_proof_json)
 [![codecov](https://codecov.io/gh/grzegorzblaszczyk/bullet-proof-json/branch/main/graph/badge.svg)](https://codecov.io/gh/grzegorzblaszczyk/bullet-proof-json)
 
 # The Goal
